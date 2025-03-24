@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.img-container {
+    width: 90vw;
+    height: 90vh;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.img-container img {
+    height: 20rem;
+    width: 20rem;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+.img-container img:hover {
+    transform: scale(1.08) rotate(4deg);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.img-view {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;/* to make sure its shown above all the other images in the img container */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.img-view img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 10px;
+}
+.img-view span {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+}
+.img-view span:hover {
+    cursor: pointer;
+}
